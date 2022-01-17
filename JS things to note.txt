@@ -1,0 +1,19 @@
+INDEX OF - This will search for the number entered in the bracket "indexOf(3)" and will print the index of the number in the array. In this case, it will search for "3" in the array and return the index of 3.
+
+SPLICE - Firstly, this removes "items" from an array starting from the index you specified, secondly, you tell it how many items to be removed and thirdly you can tell it to either replace the removed item(s) with another item. Splice removes items so when we call on the original array,  the spliced items are no longer there.
+
+var array = [1, 2, 3, 4];
+console.log(array.splice(0, 1, "Max"));
+
+In this case, starting from index of 0, it removes only one item and replaced the removed item (1) with a string (Max).
+
+SLICE - This will return a section of an array. Unlike SPLICE that removes part of an array , slice will not remove the items from the original array so when we call the original array the items will still be there  but with slice we can list our certain section of an array or let us say we only want to display those sections even though we have others in the array.
+
+Async/await & .then/.catch : - We should either use one of these two and not both i.e. either we have 
+
+useEffect(async () => {
+    const result = await axios("https://jsonplaceholder.typicode.com/users");
+  });
+
+OR
+
